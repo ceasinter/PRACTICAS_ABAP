@@ -24,7 +24,7 @@ CLASS zpracticas_abap_tablasinternas IMPLEMENTATION.
              precio    TYPE p LENGTH 6 DECIMALS 2,
            END OF ty_producto.
 
-    TYPES tty_productos TYPE STANDARD TABLE OF ty_producto WITH EMPTY KEY.
+    TYPES: tty_productos TYPE STANDARD TABLE OF ty_producto WITH EMPTY KEY.
 
     DATA(lt_productos_origen) = VALUE tty_productos(
         ( id = 1 nombre = 'Laptop'     categoria = 'ELECTRONICA' precio = '1000.00' )
